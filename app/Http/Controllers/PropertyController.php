@@ -30,4 +30,8 @@ class PropertyController extends Controller
 
     return response()->json($property, 201);
 }
+public function show(\App\Models\Property $property)
+{
+    return response()->json($property);
+}
 }
